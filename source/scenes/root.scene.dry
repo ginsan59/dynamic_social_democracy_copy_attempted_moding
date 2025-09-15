@@ -135,8 +135,6 @@ Q.z_leader = "Marx";
 Q.z_ideology = "Right";
 Q.cvp_ideology = "Moderate";
 Q.stegerwald_path = 0;
-Q.nsdap_leader = "Hitler";
-Q.nsdap_chancellor = "Hitler";
 
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 25;
@@ -158,10 +156,6 @@ Q.sh_strength = 500;
 Q.sh_militancy = 0.5;
 Q.sh_banned = 0;
 Q.sh_banned_prussia = 0;
-Q.sa_strength = 30;
-Q.sa_militancy = 0.8;
-Q.sa_banned = 0;
-Q.sa_banned_prussia = 0;
 Q.rfb_strength = 130;
 Q.rfb_militancy = 0.5;
 Q.rfb_banned = 0;
@@ -204,7 +198,7 @@ Q.presidential_powers = 0;
 // allows banning of non-constitutional parties
 Q.constitutional_protection = 0;
 Q.kpd_banned = 0;
-Q.nsdap_banned = 0;
+Q.nsdap_banned = 1;
 
 // coups and capital strikes happen when you upset the right or the capitalists too much with your policies. they're an additional check on your policies, when purely electoral checks don't suffice.
 // when coup_progress reaches 10 or capital_strike_progress reaches 10, there's a special event that launches the coup.
@@ -247,8 +241,8 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
-Q.parties_graph = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'other'];
+Q.parties_graph = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'other'];
 
 Q.sapd_formed = 0;
 Q.dnf_formed = 0;
@@ -265,7 +259,6 @@ Q.workers_z = 5;
 Q.workers_ddp = 2;
 Q.workers_dvp = 0;
 Q.workers_dnvp = 6;
-Q.workers_nsdap = 0;
 Q.workers_other = 10;
 
 Q.new_middle_spd = 8;
@@ -274,7 +267,6 @@ Q.new_middle_z = 10;
 Q.new_middle_ddp = 23;
 Q.new_middle_dvp = 22;
 Q.new_middle_dnvp = 10;
-Q.new_middle_nsdap = 4;
 Q.new_middle_other = 22;
 
 Q.old_middle_spd = 4;
@@ -283,7 +275,6 @@ Q.old_middle_z = 6;
 Q.old_middle_ddp = 10;
 Q.old_middle_dvp = 27;
 Q.old_middle_dnvp = 24;
-Q.old_middle_nsdap = 9;
 Q.old_middle_other = 20;
 
 Q.rural_spd = 9;
@@ -292,7 +283,6 @@ Q.rural_z = 5;
 Q.rural_ddp = 4;
 Q.rural_dvp = 15;
 Q.rural_dnvp = 46;
-Q.rural_nsdap = 3;
 Q.rural_other = 16;
 
 Q.unemployed_spd = 21;
@@ -301,7 +291,6 @@ Q.unemployed_z = 1;
 Q.unemployed_ddp = 0;
 Q.unemployed_dvp = 0;
 Q.unemployed_dnvp = 4;
-Q.unemployed_nsdap = 13;
 Q.unemployed_other = 7;
 
 Q.catholics_spd = 21;
@@ -310,7 +299,6 @@ Q.catholics_z = 49;
 Q.catholics_ddp = 0;
 Q.catholics_dvp = 5;
 Q.catholics_dnvp = 5;
-Q.catholics_nsdap = 0;
 Q.catholics_other = 16;
 
 Q.workers_spd_old = 60;
@@ -332,7 +320,6 @@ Q.z_r = 17.8;
 Q.ddp_r = 6.5;
 Q.dvp_r = 10.3;
 Q.dnvp_r = 20.9;
-Q.nsdap_r = 3;
 Q.other_r = 5.9;
 Q.bvp_r = 3.9;
 Q.wp_r = 2.4;
@@ -348,7 +335,6 @@ Q.old_z_r = 13.9;
 Q.old_ddp_r = 6.5;
 Q.old_dvp_r = 10.3;
 Q.old_dnvp_r = 20.9;
-Q.old_nsdap_r = 3;
 Q.old_other_r = 5.9;
 Q.old_bvp_r = 3.9;
 
@@ -359,7 +345,6 @@ Q.previous_z_last_election_votes = 17.3;
 Q.previous_ddp_last_election_votes = 6.3;
 Q.previous_dvp_last_election_votes = 10.1;
 Q.previous_dnvp_last_election_votes = 20.5;
-Q.previous_nsdap_last_election_votes = 3;
 Q.previous_other_last_election_votes = 7.8;
 Q.previous_bvp_last_election_votes = 3.7;
 
@@ -368,16 +353,13 @@ Q.old_nsdap_hitler_r = 0;
 Q.old_nvf_r = 0;
 
 Q.old_dsu_r_prussia = 0;
-Q.old_nsdap_hitler_r_prussia = 0;
 Q.old_nvf_r_prussia = 0;
 
 Q.previous_dsu_last_election_votes = 0.0;
-Q.previous_nsdap_hitler_last_election_votes = 0.0;
 Q.previous_nvf_last_election_votes = 0.0;
 Q.previous_schleicher_dnef_last_election_votes = 0.0;
 
 Q.previous_dsu_last_election_votes_prussia = 0.0;
-Q.previous_nsdap_hitler_last_election_votes_prussia = 0.0;
 Q.previous_nvf_last_election_votes_prussia = 0.0;
 Q.previous_schleicher_dnef_last_election_votes_prussia = 0.0;
 
@@ -388,7 +370,6 @@ Q.z_r_prussia = 18.0;
 Q.ddp_r_prussia = 6.0;
 Q.dvp_r_prussia = 10.0;
 Q.dnvp_r_prussia = 24.2;
-Q.nsdap_r_prussia = 2.5;
 Q.other_r_prussia = 4.2;
 
 // diff from prev PRUSSIA
@@ -398,7 +379,6 @@ Q.old_z_r_prussia = 18.0;
 Q.old_ddp_r_prussia = 6.0;
 Q.old_dvp_r_prussia = 10.0;
 Q.old_dnvp_r_prussia = 24.2;
-Q.old_nsdap_r_prussia = 2.5;
 Q.old_other_r_prussia = 4.2;
 
 // old election votes PRUSSIA
@@ -408,7 +388,6 @@ Q.previous_z_last_election_votes_prussia = 17.6;
 Q.previous_ddp_last_election_votes_prussia = 5.9;
 Q.previous_dvp_last_election_votes_prussia = 9.8;
 Q.previous_dnvp_last_election_votes_prussia = 23.7;
-Q.previous_nsdap_last_election_votes_prussia = 2.5;
 Q.previous_other_last_election_votes_prussia = 6.0;
 
 Q.spd_votes = 27.9;
@@ -417,7 +396,6 @@ Q.z_votes = 15.1;
 Q.ddp_votes = 4.7;
 Q.dvp_votes = 8.6;
 Q.dnvp_votes = 15.2;
-Q.nsdap_votes = 2.6;
 Q.other_votes = 14.5;
 Q.bvp_votes = 0;
 
@@ -477,7 +455,6 @@ Q.adjustmentFactors_ddp = 1.0;
 Q.adjustmentFactors_dvp = 1.0;
 Q.adjustmentFactors_lvp = 1.0;
 Q.adjustmentFactors_dnvp = 1.0;
-Q.adjustmentFactors_nsdap = 1.0;
 Q.adjustmentFactors_dnf = 1.0;
 Q.adjustmentFactors_dnef = 1.0;
 Q.adjustmentFactors_kvp = 1.0;
@@ -491,7 +468,6 @@ Q.adjustmentFactors_votes_ddp = 1.0;
 Q.adjustmentFactors_votes_dvp = 1.0;
 Q.adjustmentFactors_votes_lvp = 1.0;
 Q.adjustmentFactors_votes_dnvp = 1.0;
-Q.adjustmentFactors_votes_nsdap = 1.0;
 Q.adjustmentFactors_votes_dnf = 1.0;
 Q.adjustmentFactors_votes_dnef = 1.0;
 Q.adjustmentFactors_votes_kvp = 1.0;
@@ -505,7 +481,6 @@ Q.adjustmentFactors_ddp_prussia = 1.0;
 Q.adjustmentFactors_dvp_prussia = 1.0;
 Q.adjustmentFactors_lvp_prussia = 1.0;
 Q.adjustmentFactors_dnvp_prussia = 1.0;
-Q.adjustmentFactors_nsdap_prussia = 1.0;
 Q.adjustmentFactors_dnf_prussia = 1.0;
 Q.adjustmentFactors_dnef_prussia = 1.0;
 Q.adjustmentFactors_kvp_prussia = 1.0;
@@ -534,7 +509,6 @@ Q.ddp_in_government = 0;
 Q.dvp_in_government = 1;
 Q.dnvp_in_government = 1;
 Q.kpd_in_government = 0;
-Q.nsdap_in_government = 0;
 
 Q.spd_prussia_time = 0;
 
